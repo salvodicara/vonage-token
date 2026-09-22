@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+
+# Credentials belong in ~/.config/vonage-token, never in a clone of this repo.
+apps.json
+*.key
+*.pem
