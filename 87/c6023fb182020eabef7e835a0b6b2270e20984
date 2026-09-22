@@ -1,0 +1,40 @@
+.gitignore
+  h_b3ee91954e6e8e 1-7
+LICENSE
+  h_b3ee91954e6e8e 1-21
+README.md
+  h_b3ee91954e6e8e 1-98
+apps.js
+  h_b3ee91954e6e8e 1-228
+config.js
+  h_b3ee91954e6e8e 1-20
+defaults.js
+  h_b3ee91954e6e8e 1-47
+emergency.js
+  h_b3ee91954e6e8e 1-13
+jsconfig.json
+  h_b3ee91954e6e8e 1-16
+justfile
+  h_b3ee91954e6e8e 1-47
+package.json
+  h_b3ee91954e6e8e 1-8
+store.js
+  h_b3ee91954e6e8e 1-69
+test.js
+  h_b3ee91954e6e8e 1-200
+token.js
+  h_b3ee91954e6e8e 1-76
+user.js
+  h_b3ee91954e6e8e 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "87c6023fb182020eabef7e835a0b6b2270e20984",
+  "prompts": {},
+  "humans": {
+    "h_b3ee91954e6e8e": {
+      "author": "Salvatore Di Cara <salvodicara@gmail.com>"
+    }
+  }
+}
