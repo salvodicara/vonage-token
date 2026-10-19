@@ -158,7 +158,7 @@ test('an admin token is a verifiable RS256 JWT carrying the ACL', withConfig('al
   assert.equal(payload.application_id, 'a-1');
   assert.equal(payload.iss, 'alpha');
   assert.equal(payload.exp - payload.iat, TTL);
-  assert.ok(payload.acl.paths['/*/users/**']);
+  assert.ok(payload.acl.paths['/*/users/*']);
   assert.equal(payload.sub, undefined, 'an admin token has no subject');
 }));
 

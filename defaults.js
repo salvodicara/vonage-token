@@ -10,24 +10,24 @@ export const TTL = 86400;
 
 /**
  * Permissions granted by every token, as path patterns mapped to allowed methods.
- * An empty object allows all methods. Remove what you don't need.
+ * An empty object allows all methods. This is the Client SDK's least-privilege voice ACL, kept in step
+ * with docs/jwt-acl.md in nexmoclient-sdk-core-kmp, whose tests check it against every request the SDK makes.
  * Reference: https://developer.vonage.com/en/conversation/guides/jwt-acl
  */
 export const ACL = {
   paths: {
-    '/*/users/**': { methods: ['GET', 'POST'] },
-    '/*/sessions/**': { methods: ['POST'] },
+    '/*/sessions/**': { methods: ['POST', 'PUT'] },
     '/*/conversations/*': { methods: ['GET'] },
-    '/*/conversations/*/events*': { methods: ['POST', 'GET'] },
-    '/*/conversations/*/legs': { methods: ['GET'] },
+    '/*/conversations/*/members/*': { methods: ['GET', 'PUT', 'DELETE'] },
     '/*/conversations/*/rtc/*/answer': { methods: ['POST'] },
-    '/*/conversations/*/rtc/*/offer/*': { methods: ['POST'] },
-    '/*/conversations/*/members/*': { methods: ['PUT', 'DELETE'] },
+    '/*/conversations/*/rtc/*/offer': { methods: ['POST'] },
+    '/*/conversations/*/events': { methods: ['GET', 'POST'] },
+    '/*/conversations/*/legs': { methods: ['GET'] },
     '/*/knocking/**': { methods: ['POST', 'DELETE'] },
-    '/*/legs/**': { methods: ['POST', 'GET'] },
-    '/*/rtc/**': { methods: ['POST', 'GET'] },
-    '/*/devices/**': { methods: ['PUT', 'DELETE'] },
-    '/*/discovery/**': { methods: ['GET'] },
+    '/*/legs/**': { methods: ['GET', 'POST', 'PUT'] },
+    '/*/rtc/**': { methods: ['POST'] },
+    '/*/devices/*': { methods: ['PUT', 'DELETE'] },
+    '/*/users/*': { methods: ['GET'] },
     // Voice Insights sits at /voice-insights/v1/**, so it has no leading segment
     // for `/*/` to match — unlike every Conversation API path above.
     '/voice-insights/**': {},
