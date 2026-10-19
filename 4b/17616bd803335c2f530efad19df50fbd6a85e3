@@ -1,0 +1,21 @@
+test.js
+  s_9cef3747614778::t_608103ca5a504e 161
+defaults.js
+  s_9cef3747614778::t_687f3f60775ec8 13-14,19,21,23-25,27-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4b17616bd803335c2f530efad19df50fbd6a85e3",
+  "prompts": {},
+  "sessions": {
+    "s_9cef3747614778": {
+      "agent_id": {
+        "tool": "kiro",
+        "id": "sess_1fdfba52-5f2c-49e9-af6d-8ea9c848829c",
+        "model": "auto"
+      },
+      "human_author": "Salvatore Di Cara <salvodicara@gmail.com>"
+    }
+  }
+}
